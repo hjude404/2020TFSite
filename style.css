@@ -1,0 +1,6 @@
+/* style dat logo */
+
+#logo {
+    display: flex;
+    justify-content: center;
+}
