@@ -4,3 +4,17 @@
     display: flex;
     justify-content: center;
 }
+
+#form {
+    display: flex;
+    justify-content: center;
+}
+
+input::placeholder {
+    font-family: 'Abel';
+    font-weight: bold;
+}
+
+input[type=text] {
+    font-family: 'Abel';
+}
