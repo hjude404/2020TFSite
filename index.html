@@ -2,29 +2,356 @@
 <html lang="en">
 <!-- Created by Judah Harrigan -->
 
+<!-- N.B. The code for the scroll-to-top button in all files, has been adapted from a W3 Schools tutorial: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp -->
+
 <head>
     <meta charset="UTF-8">
     <!-- display icon for tab favicon -->
     <link rel="icon" href="images/transparenttri.png">
-    <!-- link to css -->
+    <!-- link to css and js files -->
     <link rel="stylesheet" href="style.css">
+    <script href="script.js"></script>
     <!-- Import some fonts -->
     <link rel=" stylesheet " href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css " <!-- Here are the fonts you can use: https://fonts.google.com/ -->
     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Gruppo' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Teko' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
-    <title>Thinking</title>
+    <title>A fun website</title>
+
+    <!-- I'm putting this CSS here because it didn't seem to work when I tried it in the style.css file -->
+    <!-- P.S. This code is from the W3 schools tutorial for parallax scrolling:
+         https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_parallax -->
+    <style>
+        .parallax1 {
+            background-image: url('images/judahHeadshot.jpg');
+            min-height: 1000px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
 </head>
 
 <body>
-    <div id="logo ">
-        <a href="../2020TFSite/index.html "><img id="mainLogo" src="images/transparenttri.png" width=80 height=70></a>
+
+    <div id="titleText">
+        <p>Heyo. Thanks for visiting.</p>
+    </div>
+    <p id="titleText">How are you? Well, I hope.</p>
+    <br>
+    <p id="sideText">(Nothing to see yet. Keep scrollin', slowly.)</p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p id="firstText">Kinda boring, right?</p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p id="firstText">Do I still have your interest, if I ever did?</p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p id="secondText">Okay okay, enough messin' around. Let's get started.</p>
+    <br>
+    <p id="secondText">First, who am I?</p>
+    <p id="waitText">WAIT A SEC</p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p id="secondText">Get ready for a rather annoyingly large photo.</p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="parallax1"></div>
+    <br>
+    <p id="underImageText">I'm Judah Harrigan. I'm an engineer (or at least am learning to be), an archer, and a programmer.</p>
+    <p id="underImageText">Oh, and I also have an afro.</p>
+    <div style='float:left; width:30%'>
+        <p id="leftUnderText">(look at that afro)</p>
+    </div>
+    <div style="float:right; width:20%">
+        <p id="rightUnderText">And no, you can't touch it (lol).</p>
     </div>
     <br>
     <br>
-    <form id="form">
-        <input type="text" placeholder="Looking for something?" name="search">
-        <button type="submit"><i class="fa fa-search"></i></button>
-    </form>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <button onclick="topFunction()" id="scrollBtn" title="Get back up">Go back up!</button>
+    <!-- I'm putting the javascript code here, because that's what worked. I think I linked the JS file incorrectly. -->
+    <script>
+        // get dat button
+        button = document.getElementById("scrollBtn");
+
+        // show button after scrolling 1000 pixels
+        window.onscroll = function() {
+            scrollFunction();
+        }
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 5000 || document.documentElement.scrollTop > 5000) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        }
+
+        // Make the button work when clicked
+        function topFunction() {
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
 </body>
