@@ -51,6 +51,11 @@
     font-family: 'Abel';
 }
 
+#aboutMeText {
+    font-size: 20px;
+    font-family: 'Abel';
+}
+
 
 /* style the scroll to top button */
 
@@ -68,6 +73,7 @@
     padding: 15px;
     border-radius: 10px;
     font-size: 18px;
+    font-family: 'Abel';
 }
 
 #scrollBtn:hover {
